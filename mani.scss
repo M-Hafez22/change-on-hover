@@ -5,7 +5,7 @@ $clr: #0daa90;
     top: 20%;
     left: 10%;
     color: darken($clr, 20%);
-    transition: all 1.5s ease;
+    transition: all 0.5s ease;
   
     &:hover::after,
     &:focus::after {
@@ -23,6 +23,6 @@ $clr: #0daa90;
       height: 100%;
       width: 0%;
       background: lighten($clr, 100%); /*parent background*/
-      transition: all 2s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
   }
