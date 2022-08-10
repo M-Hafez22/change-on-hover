@@ -1,0 +1,28 @@
+$clr: #0daa90;
+
+.changeText {
+    position: relative;
+    top: 20%;
+    left: 10%;
+    color: darken($clr, 20%);
+    transition: all 1.5s ease;
+  
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+      width: 100%;
+    }
+  
+    &::after {
+      content: "Hafez";
+      overflow: hidden;
+      position: absolute;
+      color: $clr;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 0%;
+      background: lighten($clr, 100%); /*parent background*/
+      transition: all 2s ease-in-out;
+    }
+  }
