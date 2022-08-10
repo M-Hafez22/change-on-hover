@@ -1,9 +1,14 @@
 $clr: #0daa90;
 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
 .changeText {
     position: relative;
-    top: 20%;
-    left: 10%;
     color: darken($clr, 20%);
     transition: all 0.5s ease;
   
